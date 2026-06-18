@@ -16,8 +16,6 @@ Es común caer en la trampa de pensar que escribir es una pérdida de tiempo. Si
     4. **Conocimiento:** La memoria del proyecto que sobrevive a la rotación de personal.
     5. **Respaldo Legal:** La defensa ante auditorías, revisiones fiscales o disputas contractuales.
 
-> **Regla de oro:** A mayor riesgo en el proyecto (por ejemplo, banca, aplicaciones médicas o entidades gubernamentales), más exhaustiva debe ser la documentación.
-
 ---
 
 ## 2. El SRS (IEEE 830): El plano de la casa
@@ -30,8 +28,6 @@ Construir un software sin documentación es equivalente a construir una casa sol
 * **3. Requisitos específicos:** El núcleo técnico del documento, dividido en:
     * **Requerimientos Funcionales (RF):** Lo que el software debe hacer (acciones, botones, flujos de pantallas).
     * **Requerimientos No Funcionales (RNF):** Cómo se debe comportar el software (velocidad, seguridad, estabilidad, disponibilidad).
-
-> **Sobre los RNF:** Si no se puede medir, no es un requerimiento válido. Evite usar adjetivos subjetivos como "bonito", "seguro" o "rápido". Utilice métricas claras en su lugar: "El tiempo de respuesta debe ser menor a 2 segundos" o "Las contraseñas deben almacenarse cifradas mediante algoritmo bcrypt con factor 12".
 
 ---
 
@@ -57,7 +53,3 @@ Tras trabajar de forma prolongada en la redacción de un documento, el autor sue
 * **Falta de atomicidad:** Agrupar múltiples funciones independientes dentro de un mismo enunciado (por ejemplo: "El sistema permite borrar usuarios, mandar SMS y generar reportes"). Los requerimientos deben desglosarse de forma individual con un ID único para cada función.
 * **Exceso de jerga técnica frente al cliente:** Al usuario final o cliente no le corresponde validar detalles de implementación como "header Authorization Bearer JWT". La jerga técnica se reserva para las especificaciones de arquitectura y el código, no para los requerimientos que el cliente debe firmar como aceptados.
 * **Contradicciones internas:** Declarar en una sección que la base de datos es de acceso público y en otra exigir restricciones severas de autenticación para consultar la misma información.
-
----
-
-> **Conclusión:** Invertir el tiempo necesario para documentar correctamente al inicio del proyecto mitiga riesgos técnicos, evita horas extra de desarrollo correctivo y previene disputas por malentendidos en el alcance del software.
